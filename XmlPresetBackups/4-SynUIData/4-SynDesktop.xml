@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptPanel" id="Oscillators" x="0.0" y="100.0" width="200.0"
+             height="600.0" itemColour2="4287871232" itemColour="4278190080"
+             bgColour="1436591616" processorId="Waveform Generators" borderRadius="0.0"
+             opaque="1" borderSize="0.0">
+    <Component type="ScriptLabel" id="OscPanelLabel" x="0.0" y="570.0" width="200.0"
+               height="30.0" parentComponent="Oscillators" fontSize="29.0" textColour="4278190080"
+               fontName="Tahoma" fontStyle="Regular" editable="0" text="Oscillators"/>
+    <Component type="ScriptPanel" id="ScriptPanel1" x="0.0" y="0.0" width="200.0"
+               height="100.0" parentComponent="Oscillators" bgColour="16777215"
+               itemColour2="0" itemColour="0" textColour="16777215">
+      <Component type="ScriptComboBox" id="Osc1_Picker" x="0.0" y="30.0" parentComponent="ScriptPanel1"
+                 items="Sine&#10;Triangle&#10;Saw&#10;Square" max="4" fontName="Tahoma"
+                 fontSize="17.0" text="Wave" width="200.0" height="30.0" processorId="DualOsc1"
+                 parameterId="WaveForm1"/>
+      <Component type="ScriptLabel" id="Wave1_Label" x="0.0" y="0.0" width="200.0"
+                 height="30.0" parentComponent="ScriptPanel1" fontName="Tahoma"
+                 fontSize="24.0" editable="0" text="Osc 1 Wave 1"/>
+      <Component type="ScriptSlider" id="Oct_1" x="0.0" y="60.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel1" itemColour="3355443"
+                 bgColour="16777215" itemColour2="16777215" mode="Pan" min="-5.0"
+                 max="5.0" stepSize="1.0" suffix="L" middlePosition="0.0" processorId="DualOsc1"
+                 parameterId="OctaveTranspose1" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptSlider" id="Pan_1" x="100.0" y="60.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel1" itemColour="3355443"
+                 bgColour="16777215" itemColour2="16777215" mode="Pan" min="-100.0"
+                 max="100.0" stepSize="1.0" suffix="L" middlePosition="0.0" processorId="DualOsc1"
+                 parameterId="Pan1" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptLabel" id="Oct_Label_1" x="40.0" y="60.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel1" text="Octave" fontSize="19.0"
+                 editable="0" fontName="Tahoma"/>
+      <Component type="ScriptLabel" id="Pan_Label_1" x="140.0" y="60.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel1" text="Panning" fontSize="19.0"
+                 editable="0" fontName="Tahoma"/>
+    </Component>
+    <Component type="ScriptPanel" id="ScriptPanel2" x="0.0" y="110.0" width="200.0"
+               height="100.0" parentComponent="Oscillators" itemColour="0" itemColour2="0"
+               bgColour="16777215" textColour="16777215">
+      <Component type="ScriptComboBox" id="Osc2_Picker" x="0.0" y="30.0" parentComponent="ScriptPanel2"
+                 items="Sine&#10;Triangle&#10;Saw&#10;Square" max="4" fontName="Tahoma"
+                 fontSize="17.0" text="Wave" width="200.0" height="30.0" processorId="DualOsc1"
+                 parameterId="WaveForm2"/>
+      <Component type="ScriptLabel" id="Wave2_Label" x="0.0" y="0.0" width="200.0"
+                 height="30.0" parentComponent="ScriptPanel2" fontName="Tahoma"
+                 fontSize="24.0" editable="0" text="Osc 1 Wave 2"/>
+      <Component type="ScriptSlider" id="Oct_2" x="0.0" y="60.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel2" itemColour="3355443"
+                 bgColour="16777215" itemColour2="16777215" mode="Pan" min="-5.0"
+                 max="5.0" stepSize="1.0" suffix="L" middlePosition="0.0" processorId="DualOsc1"
+                 parameterId="OctaveTranspose2" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptSlider" id="Pan_2" x="100.0" y="60.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel2" itemColour="3355443"
+                 bgColour="16777215" itemColour2="16777215" mode="Pan" min="-100.0"
+                 max="100.0" stepSize="1.0" suffix="L" middlePosition="0.0" processorId="DualOsc1"
+                 parameterId="Pan2" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptLabel" id="Pan_Label_2" x="140.0" y="60.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel2" text="Panning" fontSize="19.0"
+                 editable="0" fontName="Tahoma"/>
+      <Component type="ScriptLabel" id="Oct_Label_2" x="40.0" y="60.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel2" text="Octave" fontSize="19.0"
+                 editable="0" fontName="Tahoma"/>
+    </Component>
+    <Component type="ScriptPanel" id="ScriptPanel3" x="0.0" y="220.0" width="200.0"
+               height="100.0" parentComponent="Oscillators" itemColour="0" itemColour2="0"
+               bgColour="16777215" textColour="16777215">
+      <Component type="ScriptComboBox" id="Osc3_Picker" x="0.0" y="30.0" parentComponent="ScriptPanel3"
+                 items="Sine&#10;Triangle&#10;Saw&#10;Square" max="4" fontName="Tahoma"
+                 fontSize="17.0" text="Wave" width="200.0" height="30.0" processorId="DualOsc2"
+                 parameterId="WaveForm1"/>
+      <Component type="ScriptLabel" id="Wave3_Label" x="0.0" y="0.0" width="200.0"
+                 height="30.0" parentComponent="ScriptPanel3" fontName="Tahoma"
+                 fontSize="24.0" editable="0" text="Osc 2 Wave 1"/>
+      <Component type="ScriptSlider" id="Oct_3" x="0.0" y="60.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel3" itemColour="3355443"
+                 bgColour="16777215" itemColour2="16777215" mode="Pan" min="-5.0"
+                 max="5.0" stepSize="1.0" suffix="L" middlePosition="0.0" processorId="DualOsc2"
+                 parameterId="OctaveTranspose1" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptSlider" id="Pan_3" x="100.0" y="60.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel3" itemColour="3355443"
+                 bgColour="16777215" itemColour2="16777215" mode="Pan" min="-100.0"
+                 max="100.0" stepSize="1.0" suffix="L" middlePosition="0.0" processorId="DualOsc2"
+                 parameterId="Pan1" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptLabel" id="Pan_Label_3" x="140.0" y="60.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel3" text="Panning" fontSize="19.0"
+                 editable="0" fontName="Tahoma"/>
+      <Component type="ScriptLabel" id="Oct_Label_3" x="40.0" y="60.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel3" text="Octave" fontSize="19.0"
+                 editable="0" fontName="Tahoma"/>
+    </Component>
+    <Component type="ScriptPanel" id="ScriptPanel4" x="0.0" y="330.0" width="200.0"
+               height="100.0" parentComponent="Oscillators" itemColour="0" itemColour2="0"
+               bgColour="16777215" textColour="16777215">
+      <Component type="ScriptComboBox" id="Osc4_Picker" x="0.0" y="30.0" parentComponent="ScriptPanel4"
+                 items="Sine&#10;Triangle&#10;Saw&#10;Square" max="4" fontName="Tahoma"
+                 fontSize="17.0" text="Wave" width="200.0" height="30.0" processorId="DualOsc2"
+                 parameterId="WaveForm2"/>
+      <Component type="ScriptLabel" id="Wave4_Label" x="0.0" y="0.0" width="200.0"
+                 height="30.0" parentComponent="ScriptPanel4" fontName="Tahoma"
+                 fontSize="24.0" editable="0" text="Osc 2 Wave 2"/>
+      <Component type="ScriptSlider" id="Pan_4" x="100.0" y="60.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel4" itemColour="3355443"
+                 bgColour="16777215" itemColour2="16777215" mode="Pan" min="-100.0"
+                 max="100.0" stepSize="1.0" suffix="L" middlePosition="0.0" processorId="DualOsc2"
+                 parameterId="Pan2" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptSlider" id="Oct_4" x="0.0" y="60.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel4" itemColour="3355443"
+                 bgColour="16777215" itemColour2="16777215" mode="Pan" min="-5.0"
+                 max="5.0" stepSize="1.0" suffix="L" middlePosition="0.0" processorId="DualOsc2"
+                 parameterId="OctaveTranspose2" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptLabel" id="Pan_Label_4" x="140.0" y="60.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel4" text="Panning" fontSize="19.0"
+                 editable="0" fontName="Tahoma"/>
+      <Component type="ScriptLabel" id="Oct_Label_4" x="40.0" y="60.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel4" text="Octave" fontSize="19.0"
+                 editable="0" fontName="Tahoma"/>
+    </Component>
+    <Component type="ScriptPanel" id="ScriptPanel5" x="0.0" y="440.0" width="200"
+               height="140" parentComponent="Oscillators" bgColour="16777215"
+               itemColour="0" itemColour2="0" textColour="16777215">
+      <Component type="ScriptSlider" id="Wave_Vol_1" x="0.0" y="20.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel5" text="" bgColour="16777215"
+                 itemColour="3355443" itemColour2="1118481" textColour="16777215"
+                 processorId="DualOsc1" parameterId="Gain" mode="Decibel" stepSize="0.1000000014901161"
+                 suffix=" dB" middlePosition="0.5" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptSlider" id="Wave_Vol_2" x="100.0" y="20.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel5" text="" bgColour="16777215"
+                 itemColour="3355443" itemColour2="1118481" textColour="16777215"
+                 mode="Decibel" stepSize="0.1000000014901161" suffix=" dB" middlePosition="0.5"
+                 processorId="DualOsc2" parameterId="Gain" showValuePopup="Below"
+                 showTextBox="0"/>
+      <Component type="ScriptSlider" id="Wave_Mix_1" x="0.0" y="60.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel5" text="" bgColour="16777215"
+                 itemColour="3355443" itemColour2="1118481" textColour="16777215"
+                 processorId="DualOsc1" parameterId="Mix" showValuePopup="Below"
+                 showTextBox="0"/>
+      <Component type="ScriptSlider" id="Wave_Mix_2" x="100.0" y="60.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel5" text="" bgColour="16777215"
+                 itemColour="3355443" itemColour2="1118481" textColour="16777215"
+                 processorId="DualOsc2" parameterId="Mix" showValuePopup="Below"
+                 showTextBox="0"/>
+      <Component type="ScriptLabel" id="Label_Rizz" x="0.0" y="0.0" width="100.0"
+                 height="20.0" parentComponent="ScriptPanel5" text="Osc 1" fontSize="19.0"
+                 editable="0" fontName="Tahoma"/>
+      <Component type="ScriptLabel" id="Label_Gyat" x="100.0" y="0.0" width="100.0"
+                 height="20.0" parentComponent="ScriptPanel5" text="Osc 2" fontSize="19.0"
+                 editable="0" fontName="Tahoma"/>
+      <Component type="ScriptLabel" id="ScriptLabel1" x="40.0" y="20.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel5" text="Gain" fontName="Tahoma"
+                 fontSize="24.0" editable="0"/>
+      <Component type="ScriptLabel" id="ScriptLabel2" x="140.0" y="20.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel5" text="Gain" fontName="Tahoma"
+                 fontSize="24.0" editable="0"/>
+      <Component type="ScriptLabel" id="ScriptLabel3" x="40.0" y="60.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel5" text="Mix" fontName="Tahoma"
+                 fontSize="24.0" editable="0"/>
+      <Component type="ScriptLabel" id="ScriptLabel4" x="140.0" y="60.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel5" text="Mix" fontName="Tahoma"
+                 fontSize="24.0" editable="0"/>
+      <Component type="ScriptButton" id="ScriptButton2" x="10.0" y="110.0" width="20"
+                 height="20" parentComponent="ScriptPanel5" text="" bgColour="16777215"
+                 itemColour="3355443" itemColour2="1118481" processorId="DualOsc1"
+                 parameterId="HardSync"/>
+      <Component type="ScriptButton" id="ScriptButton3" x="110.0" y="110.0" width="20"
+                 height="20" parentComponent="ScriptPanel5" text="" bgColour="16777215"
+                 itemColour="3355443" itemColour2="1118481" processorId="DualOsc2"
+                 parameterId="HardSync"/>
+      <Component type="ScriptLabel" id="ScriptLabel29" x="20.0" y="100.0" width="80"
+                 height="40" parentComponent="ScriptPanel5" text="Sync" fontSize="22.0"
+                 editable="0" fontName="Tahoma"/>
+      <Component type="ScriptLabel" id="ScriptLabel30" x="120.0" y="100.0" width="80"
+                 height="40" parentComponent="ScriptPanel5" text="Sync" fontSize="22.0"
+                 editable="0" fontName="Tahoma"/>
+    </Component>
+  </Component>
+  <Component type="ScriptPanel" id="Pitch" x="200.0" y="100.0" width="200.0"
+             height="300.0" itemColour2="4288086167" itemColour="4278190080"
+             borderRadius="0.0" borderSize="0.0">
+    <Component type="ScriptLabel" id="PitchPanelLabel" x="0.0" y="270.0" width="200.0"
+               height="30.0" parentComponent="Pitch" textColour="4278190080"
+               fontSize="29.0" fontName="Tahoma" editable="0" text="Vibrato"/>
+    <Component type="ScriptSlider" id="ScriptSlider1" x="10.0" y="60.0" width="40.0"
+               height="40.0" parentComponent="Pitch" bgColour="16777215" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" processorId="LFO Modulator2"
+               parameterId="Intensity" min="-1.0" suffix=" Oct" middlePosition="0.0"
+               showValuePopup="Below" showTextBox="0" stepSize="0.1000000014901161"/>
+    <Component type="ScriptSlider" id="ScriptSlider5" x="150.0" y="60.0" width="40.0"
+               height="40.0" parentComponent="Pitch" bgColour="16777215" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" showValuePopup="Below"
+               showTextBox="0" processorId="LFO Modulator3" parameterId="Frequency"
+               max="40.0" stepSize="1.0"/>
+    <Component type="ScriptSlider" id="ScriptSlider6" x="50.0" y="60.0" width="40.0"
+               height="40.0" parentComponent="Pitch" bgColour="16777215" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" processorId="LFO Modulator2"
+               parameterId="Frequency" max="40.0" stepSize="1.0" showValuePopup="Below"
+               showTextBox="0"/>
+    <Component type="ScriptSlider" id="ScriptSlider2" x="110.0" y="60.0" width="40.0"
+               height="40.0" parentComponent="Pitch" bgColour="16777215" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" processorId="LFO Modulator3"
+               parameterId="Intensity" min="-1.0" stepSize="0.1000000014901161"
+               suffix=" Oct" middlePosition="0.0" showValuePopup="Below" showTextBox="0"/>
+    <Component type="ScriptSlider" id="ScriptSlider3" x="10.0" y="190.0" width="40.0"
+               height="40.0" parentComponent="Pitch" bgColour="16777215" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" processorId="LFO Modulator5"
+               parameterId="Intensity" min="-1.0" stepSize="0.1000000014901161"
+               suffix=" Oct" middlePosition="0.0" showValuePopup="Below" showTextBox="0"/>
+    <Component type="ScriptSlider" id="ScriptSlider7" x="50.0" y="190.0" width="40.0"
+               height="40.0" parentComponent="Pitch" bgColour="16777215" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" processorId="LFO Modulator5"
+               parameterId="Frequency" max="40.0" stepSize="1.0" showValuePopup="Below"
+               showTextBox="0"/>
+    <Component type="ScriptSlider" id="ScriptSlider4" x="110.0" y="190.0" width="40.0"
+               height="40.0" parentComponent="Pitch" bgColour="16777215" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" processorId="LFO Modulator4"
+               parameterId="Intensity" min="-1.0" stepSize="0.1000000014901161"
+               suffix=" Oct" middlePosition="0.0" showValuePopup="Below" showTextBox="0"/>
+    <Component type="ScriptSlider" id="ScriptSlider8" x="150.0" y="190.0" width="40.0"
+               height="40.0" parentComponent="Pitch" bgColour="16777215" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" showValuePopup="Below"
+               showTextBox="0" processorId="LFO Modulator4" parameterId="Frequency"
+               max="40.0" stepSize="1.0"/>
+    <Component type="ScriptLabel" id="ScriptLabel21" x="0.0" y="0.0" width="100.0"
+               height="30.0" parentComponent="Pitch" text="Osc 1 Wave 1" fontSize="20.0"
+               fontName="Tahoma" editable="0"/>
+    <Component type="ScriptLabel" id="ScriptLabel22" x="100.0" y="0.0" width="100.0"
+               height="30.0" parentComponent="Pitch" text="Osc 1 Wave 2" fontSize="20.0"
+               fontName="Tahoma" editable="0"/>
+    <Component type="ScriptLabel" id="ScriptLabel23" x="0.0" y="130.0" width="100.0"
+               height="30.0" parentComponent="Pitch" text="Osc 2 Wave 1" fontSize="20.0"
+               fontName="Tahoma" editable="0"/>
+    <Component type="ScriptLabel" id="ScriptLabel24" x="100.0" y="130.0" width="100.0"
+               height="30.0" parentComponent="Pitch" text="Osc 2 Wave 2" fontSize="20.0"
+               fontName="Tahoma" editable="0"/>
+    <Component type="ScriptComboBox" id="ScriptComboBox1" x="0.0" y="30.0" width="100.0"
+               height="30.0" parentComponent="Pitch" text="Wave Type" fontName="Tahoma"
+               items="Sine&#10;Triangle&#10;Saw&#10;Square&#10;&#10;&#10;" processorId="LFO Modulator2"
+               parameterId="WaveFormType" max="4"/>
+    <Component type="ScriptComboBox" id="ScriptComboBox2" x="100.0" y="30.0"
+               width="100.0" height="30.0" parentComponent="Pitch" text="Wave Type"
+               fontName="Tahoma" items="Sine&#10;Triangle&#10;Saw&#10;Square&#10;&#10;&#10;"
+               processorId="LFO Modulator5" parameterId="WaveFormType" max="4"/>
+    <Component type="ScriptComboBox" id="ScriptComboBox3" x="0.0" y="160.0"
+               width="100.0" height="30.0" parentComponent="Pitch" text="Wave Type"
+               fontName="Tahoma" items="Sine&#10;Triangle&#10;Saw&#10;Square&#10;&#10;&#10;"
+               processorId="LFO Modulator3" parameterId="WaveFormType" max="4"/>
+    <Component type="ScriptComboBox" id="ScriptComboBox4" x="100.0" y="160.0"
+               width="100.0" height="30.0" parentComponent="Pitch" text="Wave Type"
+               fontName="Tahoma" items="Sine&#10;Triangle&#10;Saw&#10;Square&#10;&#10;&#10;"
+               processorId="LFO Modulator4" parameterId="WaveFormType" max="4"/>
+  </Component>
+  <Component type="ScriptPanel" id="FX" x="200.0" y="400.0" width="200.0"
+             height="300.0" itemColour2="4288086016" itemColour="4288086167"
+             borderRadius="0.0" borderSize="0.0">
+    <Component type="ScriptLabel" id="FXPanelLabel1" x="-1.0" y="267.0" width="200.0"
+               height="30.0" parentComponent="FX" textColour="4278190080" fontSize="29.0"
+               fontName="Tahoma" editable="0" text="Filter"/>
+    <Component type="ScriptFloatingTile" id="ScriptFloatingTile2" x="0.0" y="50.0"
+               width="200.0" height="50.0" parentComponent="FX" ContentType="FilterDisplay"
+               bgColour="3355443" itemColour="4294967295" itemColour2="2164260863"
+               Data="{&#10;  &quot;ProcessorId&quot;: &quot;Filter1&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"/>
+    <Component type="ScriptSlider" id="ScriptSlider9" x="0.0" y="100.0" width="40.0"
+               height="40.0" parentComponent="FX" showValuePopup="Below" min="-18.0"
+               max="18.0" middlePosition="0.0" bgColour="16777215" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" processorId="Filter1"
+               parameterId="Gain"/>
+    <Component type="ScriptSlider" id="ScriptSlider10" x="0.0" y="160.0" width="40.0"
+               height="40.0" parentComponent="FX" showValuePopup="Below" min="0.300000011920929"
+               max="8.0" middlePosition="1.0" bgColour="16777215" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" processorId="Filter1"
+               parameterId="Q"/>
+    <Component type="ScriptSlider" id="ScriptSlider11" x="100.0" y="100.0" width="40.0"
+               height="40.0" parentComponent="FX" showValuePopup="Below" min="20.0"
+               max="20000.0" middlePosition="10010.0" bgColour="16777215" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" mode="Frequency"
+               processorId="Filter1" parameterId="Frequency" stepSize="1.0"/>
+    <Component type="ScriptSlider" id="ScriptSlider12" x="100.0" y="160.0" width="40.0"
+               height="40.0" parentComponent="FX" showValuePopup="Below" min="-1.0"
+               middlePosition="0.0" bgColour="16777215" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" processorId="Filter1"
+               parameterId="BipolarIntensity"/>
+    <Component type="ScriptButton" id="ScriptButton1" x="40.0" y="270.0" width="30.0"
+               height="30.0" parentComponent="FX" bgColour="0" itemColour="3355443"
+               itemColour2="1118481" processorId="Filter1" parameterId="Enabled"/>
+    <Component type="ScriptComboBox" id="FilterSelector" x="0.0" y="0.0" width="200.0"
+               height="50.0" max="6" parentComponent="FX" items="Low Pass&#10;High Pass&#10;Allpass&#10;Moog&#10;Low Shelf&#10;High Shelf"
+               fontName="Tahoma" text="Filter"/>
+    <Component type="ScriptLabel" id="ScriptLabel25" x="40.0" y="100.0" width="60.0"
+               height="40.0" parentComponent="FX" editable="0" text="Gain" fontSize="16.0"/>
+    <Component type="ScriptLabel" id="ScriptLabel26" x="140.0" y="100.0" width="60.0"
+               height="40.0" parentComponent="FX" text="Frequency" editable="0"
+               fontSize="16.0"/>
+    <Component type="ScriptLabel" id="ScriptLabel27" x="140.0" y="160.0" width="60.0"
+               height="40.0" parentComponent="FX" text="BP Freq Mod" editable="0"
+               fontSize="16.0"/>
+    <Component type="ScriptLabel" id="ScriptLabel28" x="40.0" y="160.0" width="60.0"
+               height="40.0" parentComponent="FX" text="Q Mod" editable="0"
+               fontSize="16.0"/>
+  </Component>
+  <Component type="ScriptPanel" id="AHDSR" x="400.0" y="100.0" width="200.0"
+             height="600.0" itemColour2="4278235288" itemColour="4278190080"
+             borderRadius="0.0" borderSize="0.0">
+    <Component type="ScriptLabel" id="AHDSRPanelLabel" x="0.0" y="570.0" width="200.0"
+               height="30.0" parentComponent="AHDSR" text="AHDSR" fontName="Tahoma"
+               textColour="4278190080" fontSize="29.0" editable="0"/>
+    <Component type="ScriptPanel" id="ScriptPanel6" x="0.0" y="0.0" width="100.0"
+               height="500.0" parentComponent="AHDSR" bgColour="16777215" itemColour="0"
+               itemColour2="0" textColour="16777215">
+      <Component type="ScriptFloatingTile" id="AHDSRGraph1" x="0.0" y="30.0" width="100.0"
+                 height="60.0" parentComponent="ScriptPanel6" bgColour="0" itemColour="906028543"
+                 textColour="0" itemColour2="4278248959" ContentType="AHDSRGraph"
+                 Data="{&#10;  &quot;ProcessorId&quot;: &quot;AHDSR Envelope1&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: true&#10;}"/>
+      <Component type="ScriptLabel" id="AHDSRLabel1" x="0.0" y="0.0" width="100.0"
+                 height="30.0" parentComponent="ScriptPanel6" fontSize="22.0"
+                 fontName="Tahoma" itemColour2="4278248959" text="Osc 1" editable="0"/>
+      <Component type="ScriptSlider" id="AHDSR_Slider1" x="0.0" y="90.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel6" bgColour="0" itemColour="3355443"
+                 itemColour2="1118481" textColour="16777215" text="*" processorId="AHDSR Envelope1"
+                 parameterId="Attack" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptSlider" id="AHDSR_Slider3" x="0.0" y="140.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel6" bgColour="0" itemColour="3355443"
+                 itemColour2="1118481" textColour="16777215" text="*" processorId="AHDSR Envelope1"
+                 parameterId="Hold" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptSlider" id="AHDSR_Slider4" x="0.0" y="240.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel6" bgColour="0" itemColour="3355443"
+                 itemColour2="1118481" textColour="16777215" text="*" processorId="AHDSR Envelope1"
+                 parameterId="Decay" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptSlider" id="AHDSR_Slider5" x="0.0" y="190.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel6" bgColour="0" itemColour="3355443"
+                 itemColour2="1118481" textColour="16777215" text="*" processorId="AHDSR Envelope1"
+                 parameterId="Sustain" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptSlider" id="AHDSR_Slider6" x="0.0" y="290.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel6" bgColour="0" itemColour="3355443"
+                 itemColour2="1118481" textColour="16777215" text="*" processorId="AHDSR Envelope1"
+                 parameterId="Release" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptSlider" id="AHDSR_Slider2" x="0.0" y="390.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel6" bgColour="0" itemColour="3355443"
+                 itemColour2="1118481" textColour="16777215" text="*" processorId="AHDSR Envelope1"
+                 parameterId="AttackCurve" macroControl="No MacroControl" showValuePopup="Below"
+                 showTextBox="0"/>
+      <Component type="ScriptSlider" id="AHDSR_Slider13" x="0.0" y="340.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel6" bgColour="0" itemColour="3355443"
+                 itemColour2="1118481" textColour="16777215" text="*" processorId="AHDSR Envelope1"
+                 parameterId="DecayCurve" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptSlider" id="AHDSR_Slider14" x="0.0" y="440.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel6" bgColour="0" itemColour="3355443"
+                 itemColour2="1118481" textColour="16777215" text="*" processorId="AHDSR Envelope1"
+                 parameterId="Intensity" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptLabel" id="ScriptLabel5" x="40.0" y="93.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel6" fontSize="20.0"
+                 text="Attack" editable="0"/>
+      <Component type="ScriptLabel" id="ScriptLabel6" x="40.0" y="140.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel6" fontSize="20.0"
+                 text="Hold" editable="0"/>
+      <Component type="ScriptLabel" id="ScriptLabel7" x="40.0" y="190.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel6" fontSize="20.0"
+                 text="Sustain" editable="0"/>
+      <Component type="ScriptLabel" id="ScriptLabel8" x="40.0" y="240.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel6" fontSize="20.0"
+                 text="Decay" editable="0"/>
+      <Component type="ScriptLabel" id="ScriptLabel9" x="40.0" y="290.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel6" fontSize="20.0"
+                 text="Release" editable="0"/>
+      <Component type="ScriptLabel" id="ScriptLabel10" x="40.0" y="340.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel6" fontSize="20.0"
+                 text="A Curve" editable="0"/>
+      <Component type="ScriptLabel" id="ScriptLabel11" x="40.0" y="390.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel6" fontSize="20.0"
+                 text="D Curve" editable="0"/>
+      <Component type="ScriptLabel" id="ScriptLabel12" x="40.0" y="440.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel6" fontSize="20.0"
+                 text="Intensity" editable="0"/>
+    </Component>
+    <Component type="ScriptPanel" id="ScriptPanel7" x="100.0" y="0.0" width="100.0"
+               height="500.0" parentComponent="AHDSR" bgColour="16777215" itemColour="0"
+               itemColour2="0" textColour="16777215">
+      <Component type="ScriptFloatingTile" id="AHDSRGraph2" x="0.0" y="30.0" width="100.0"
+                 height="60.0" parentComponent="ScriptPanel7" bgColour="0" itemColour="906028543"
+                 textColour="0" itemColour2="4278248959" ContentType="AHDSRGraph"
+                 Data="{&#10;  &quot;ProcessorId&quot;: &quot;AHDSR Envelope2&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: true&#10;}"/>
+      <Component type="ScriptLabel" id="AHDSRLabel2" x="0.0" y="0.0" width="100.0"
+                 height="30.0" parentComponent="ScriptPanel7" fontSize="22.0"
+                 fontName="Tahoma" itemColour2="4278248959" text="Osc 2" editable="0"/>
+      <Component type="ScriptSlider" id="AHDSR_Slider7" x="0.0" y="90.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel7" bgColour="0" itemColour="3355443"
+                 itemColour2="1118481" textColour="16777215" text="*" processorId="AHDSR Envelope2"
+                 parameterId="Attack" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptSlider" id="AHDSR_Slider8" x="0.0" y="140.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel7" bgColour="0" itemColour="3355443"
+                 itemColour2="1118481" textColour="16777215" text="*" processorId="AHDSR Envelope2"
+                 parameterId="Hold" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptSlider" id="AHDSR_Slider9" x="0.0" y="240.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel7" bgColour="0" itemColour="3355443"
+                 itemColour2="1118481" textColour="16777215" text="*" processorId="AHDSR Envelope2"
+                 parameterId="Decay" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptSlider" id="AHDSR_Slider10" x="0.0" y="190.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel7" bgColour="0" itemColour="3355443"
+                 itemColour2="1118481" textColour="16777215" text="*" processorId="AHDSR Envelope2"
+                 parameterId="Sustain" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptSlider" id="AHDSR_Slider11" x="0.0" y="290.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel7" bgColour="0" itemColour="3355443"
+                 itemColour2="1118481" textColour="16777215" text="*" processorId="AHDSR Envelope2"
+                 parameterId="Release" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptSlider" id="AHDSR_Slider12" x="0.0" y="390.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel7" bgColour="0" itemColour="3355443"
+                 itemColour2="1118481" textColour="16777215" text="*" processorId="AHDSR Envelope2"
+                 parameterId="AttackCurve" macroControl="No MacroControl" showValuePopup="Below"
+                 showTextBox="0"/>
+      <Component type="ScriptSlider" id="AHDSR_Slider15" x="0.0" y="340.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel7" bgColour="0" itemColour="3355443"
+                 itemColour2="1118481" textColour="16777215" text="*" processorId="AHDSR Envelope2"
+                 parameterId="DecayCurve" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptSlider" id="AHDSR_Slider16" x="0.0" y="440.0" width="40.0"
+                 height="40.0" parentComponent="ScriptPanel7" bgColour="0" itemColour="3355443"
+                 itemColour2="1118481" textColour="16777215" text="*" processorId="AHDSR Envelope2"
+                 parameterId="Intensity" showValuePopup="Below" showTextBox="0"/>
+      <Component type="ScriptLabel" id="ScriptLabel13" x="40.0" y="93.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel7" fontSize="20.0"
+                 text="Attack" editable="0"/>
+      <Component type="ScriptLabel" id="ScriptLabel14" x="40.0" y="140.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel7" fontSize="20.0"
+                 text="Hold" editable="0"/>
+      <Component type="ScriptLabel" id="ScriptLabel15" x="40.0" y="190.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel7" fontSize="20.0"
+                 text="Sustain" editable="0"/>
+      <Component type="ScriptLabel" id="ScriptLabel16" x="40.0" y="240.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel7" fontSize="20.0"
+                 text="Decay" editable="0"/>
+      <Component type="ScriptLabel" id="ScriptLabel17" x="40.0" y="290.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel7" fontSize="20.0"
+                 text="Release" editable="0"/>
+      <Component type="ScriptLabel" id="ScriptLabel18" x="40.0" y="340.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel7" fontSize="20.0"
+                 text="A Curve" editable="0"/>
+      <Component type="ScriptLabel" id="ScriptLabel19" x="40.0" y="390.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel7" fontSize="20.0"
+                 text="D Curve" editable="0"/>
+      <Component type="ScriptLabel" id="ScriptLabel20" x="40.0" y="440.0" width="60.0"
+                 height="40.0" parentComponent="ScriptPanel7" fontSize="20.0"
+                 text="Intensity" editable="0"/>
+    </Component>
+  </Component>
+  <Component type="ScriptPanel" id="TitlePanel" x="0.0" y="0.0" width="600.0"
+             height="100.0" text="ScriptPane" bgColour="4294967295" itemColour2="4278190080"
+             itemColour="4283519313" borderRadius="0.0" borderSize="0.0">
+    <Component type="ScriptFloatingTile" id="Spectrum" x="0.0" y="0.0" width="600.0"
+               height="100.0" ContentType="AudioAnalyser" bgColour="3355443"
+               itemColour="1107296256" itemColour2="0" textColour="0" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Analyser2&quot;,&#10;  &quot;Index&quot;: 2,&#10;  &quot;FollowWorkspace&quot;: true&#10;}"
+               parentComponent="TitlePanel"/>
+    <Component type="ScriptFloatingTile" id="Oscilliscope" x="0.0" y="0.0" width="600.0"
+               height="100.0" ContentType="AudioAnalyser" bgColour="0" itemColour="1697854259"
+               itemColour2="16711680" textColour="0" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Analyser1&quot;,&#10;  &quot;Index&quot;: 1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+               itemColour3="16777215" parentComponent="TitlePanel"/>
+    <Component type="ScriptFloatingTile" id="Nerd Shit" x="0.0" y="0.0" width="200.0"
+               height="20.0" ContentType="PerformanceLabel" bgColour="0" itemColour="0"
+               itemColour2="0" Font="Source Code Pro" parentComponent="TitlePanel"/>
+    <Component type="ScriptLabel" id="TitleLable" x="0.0" y="0.0" width="200.0"
+               height="100.0" parentComponent="TitlePanel" textColour="4294901760"
+               fontStyle="Bold Italic" fontName="Tahoma" text="4-Syn" tooltip="Two Dual-Oscillators running in tandem"
+               fontSize="78.0" editable="0"/>
+    <Component type="ScriptSliderPack" id="VolumeMeter" x="560.0" y="0.0" width="40.0"
+               height="100.0" parentComponent="TitlePanel" sliderAmount="2.0"
+               itemColour2="65280" itemColour="-16711936" bgColour="65280" textColour="16777215"
+               enabled="0" max="0.8999999761581421"/>
+  </Component>
+  <Component type="ScriptFloatingTile" id="ScriptFloatingTile1" x="-10.0"
+             y="700.0" width="610.0" height="70.0" ContentType="Keyboard"
+             bgColour="4284769380" itemColour="2533359615" itemColour2="4294967295"
+             textColour="0" Data="{&#10;  &quot;KeyWidth&quot;: 14.0,&#10;  &quot;DisplayOctaveNumber&quot;: true,&#10;  &quot;LowKey&quot;: 9,&#10;  &quot;HiKey&quot;: 127,&#10;  &quot;CustomGraphics&quot;: false,&#10;  &quot;DefaultAppearance&quot;: true,&#10;  &quot;BlackKeyRatio&quot;: 0.699999988079071,&#10;  &quot;ToggleMode&quot;: false,&#10;  &quot;MidiChannel&quot;: 1,&#10;  &quot;UseVectorGraphics&quot;: true,&#10;  &quot;UseFlatStyle&quot;: false,&#10;  &quot;MPEKeyboard&quot;: false,&#10;  &quot;MPEStartChannel&quot;: 2,&#10;  &quot;MPEEndChannel&quot;: 16&#10;}"/>
+  <Component type="ScriptPanel" id="Invis" x="0.0" y="0.0" width="100.0" height="100.0"
+             visible="0">
+    <Component type="ScriptSlider" id="Curve_Decay" x="0.0" y="0.0" width="100.0"
+               height="100.0" parentComponent="Invis"/>
+  </Component>
+</ContentProperties>
